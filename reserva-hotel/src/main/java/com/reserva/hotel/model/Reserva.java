@@ -16,12 +16,17 @@ public class Reserva {
     private LocalDate fechaEntrada;
     private LocalDate fechaSalida;
     private String tipoHabitacion;
+    private Double precio;
 
     public Reserva() {
     }
 
     public Long getId() {
         return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getNombreCliente() {
@@ -63,4 +68,13 @@ public class Reserva {
     public void setTipoHabitacion(String tipoHabitacion) {
         this.tipoHabitacion = tipoHabitacion;
     }
+
+    public Double getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(Double precio) {
+        this.precio = precio;
+    }
+
 }
